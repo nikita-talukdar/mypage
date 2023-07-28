@@ -2,8 +2,8 @@
     --primary-color:#3949ab;
     --background-color:#867070;
     --foreground-color:#1e88e5;
-    --secondary-color:#D5B4B4;
-    --message-color:#080808; 
+    --secondary-color:#ffffff;
+    --message-color:hsl(0, 0%, 3%); 
 
 }
 
@@ -27,7 +27,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('./backg.jpg');
+    background-image: url('./bg.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -63,7 +63,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: var(--primary-color);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -79,12 +79,12 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
  .header-text p{
-  color: #080808;
+  color: var(--secondary-color);
  }
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
-    color: #080808;
+    color:  var(--secondary-color);
 }
 
 .header-text h1 span{
